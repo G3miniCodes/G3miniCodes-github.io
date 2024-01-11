@@ -1,0 +1,813 @@
+<html lang="en">
+
+<head>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #D4B996FF;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/* ////........Navbar.......//// */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.menu-items {
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #f0f0e6;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+.menu-items a:hover {
+  border-bottom: 2px solid #f0f0e6;
+}
+
+.navbar .logo {
+  order: 1;
+  color: #f0f0e6;
+  font-size: 2rem;
+}
+
+/* ////........Home Content........//// */
+
+.home-content .name {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:  #A07855FF;
+  width: 100%;
+  text-align: center;
+}
+
+.home-content .name h1 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.home-content .name p {
+  color: #f0f0e6;
+  font-size: 1.5rem;
+}
+
+.angle-down-icon {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  border: 3px solid #A07855FF;
+  border-radius: 50%;
+}
+
+.angle-down-icon a {
+  text-decoration: none;
+  color: #A07855FF;
+  padding: 1rem;
+}
+
+/* ////........About Me........//// */
+
+.about-me {
+  background-color: #A07855FF;
+  padding: 6rem 0;
+}
+
+.about-me .about-heading {
+  color: #D4B996FF;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-content img {
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  color: #f0f0e6;
+  padding: 0 0rem;
+  text-align: center;
+}
+
+
+
+.about-me .about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-content .left-content {
+  flex-basis: 55%;
+  text-align: center;
+}
+
+.about-content .right-content {
+  flex-basis: 35%;
+  margin: 20 50px;
+}
+
+
+
+.navbar.solid {
+  background-color: #A07855FF;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px rgb(7 55 74 / 20%);
+  z-index: 500;
+}
+
+.navbar.solid .navbar-brand {
+  display: inline-block;
+  color: #f0f0e6;
+  transition: color 1s ease 0s;
+}
+
+.navbar-brand {
+  display: none;
+  color: #f0f0e6;
+  font-weight: 400;
+}
+
+.work-arrow {
+  margin: 2rem 0;
+}
+
+.work-arrow a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #D4B996FF;
+}
+
+.work-arrow-2 {
+  margin: 2rem 0;
+}
+
+.work-arrow-2 a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #D4B996FF;
+  display: none;
+}
+
+/* ////.....Portfolio......///// */
+
+.portfolio {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+	    background: #D4B996FF;
+        }
+
+.portfolio h1{
+text-align : center;}
+
+
+/* Global Styles */
+.skills {
+  font-family: 'Arial', sans-serif;
+v
+}
+
+
+
+.skills-heading h1 {
+  color: #D4B996FF;
+  text-align: center;
+}
+
+
+.skills .skills-container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  flex-direction: column; /* Change to column direction */
+}
+
+.skills .skill-category {
+  /* width: 45%; Remove fixed width */
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Icon Styles */
+.skill-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #007bff; /* Change the color as needed */
+}
+
+/* Content Styles */
+h2, h3 {
+  color: #FFFFFF;
+}
+
+
+
+h3 {
+  font-weight: normal;
+  margin-top: 5px;
+  color: #D4B996FF;
+}
+
+.proj{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 70px;
+  margin-top : 25px;}
+
+.proj-heading h1 {
+  text-align: center;
+  color: #A07855FF;
+  font-size: 2.3rem;
+  font-weight: 700;
+  background: #D4B996FF;
+
+}
+
+
+.card {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #A07855FF;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%; /* Make the image take 100% width of its container */
+            height: 150px; /* Set a fixed height for the image */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+            border-radius: 6px;
+        }
+
+        .card h3 {
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold; /* Make h3 bold */
+}
+
+.card p {
+    color: #f0f0e6;
+    margin: 10px 0;
+    font-style: italic; /* Make p italic */
+}
+
+
+        .card .btn {
+            display: block; /* Make the button a block-level element */
+           position: absolute;
+    	   bottom: 10px; /* Adjust the distance from the bottom */
+    	   left: 50%; /* Center the button horizontally */
+    	    transform: translateX(-50%);
+            padding: 8px 16px;
+            background-color: #f0f0e6;
+            color: #A07855FF;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .card .btn:hover {
+            background-color: #D4B996FF;
+	    color: #fff;
+        }
+/* ////......Contact......///// */
+
+.contact {
+  background: #A07855FF;
+  position: relative;
+  height: 92vh;
+}
+
+.contact-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #D4B996FF;
+  padding-bottom: 0.5rem;
+}
+
+.contact-content .mail {
+  color: #f0f0e6;
+  padding-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.contact-content .links {
+  color: #D4B996FF;
+  padding: 0.5rem;
+  padding-bottom: 1.8rem;
+  font-size: 1rem;
+}
+
+.contact-content a {
+  text-decoration: none;
+  color: #D4B996FF;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-content a:hover {
+  color: #f0f0e6;
+}
+
+/* ////......Media query......//// */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+
+  .about-content .left-content {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .about-content .right-content {
+    flex-basis: 100%;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .skills-bar .bar .progress-line {
+    width: 100%;
+  }
+
+  .work-arrow {
+    display: none;
+  }
+
+  .right-content h1 {
+    margin-top: 3.2rem;
+  }
+
+  .proj {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .proj img {
+    height: 230px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+
+  .proj-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .proj-2 img {
+    height: 250px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+
+  .work-arrow-2 a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #D4B996FF;
+    display: block;
+    text-align: center;
+  }
+
+  .contact-content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .about-content .left-content {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .portfolio.right-content {
+    flex-basis: 100%;
+  }
+
+.portfolio.left-content {
+    flex-basis: 100%;
+  }
+
+  .about-content .right-content {
+    flex-basis: 100%;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .skills-bar .bar .progress-line {
+    width: 100%;
+  }
+
+  .work-arrow {
+    display: none;
+  }
+
+  .right-content h1 {
+    margin-top: 3.2rem;
+  }
+
+
+  .proj {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .proj img {
+    height: 240px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+
+  .proj-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .proj-2 img {
+    height: 240px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+
+  .work-arrow-2 a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #D4B996FF;
+    display: block;
+    text-align: center;
+  }
+
+  .contact-content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+   .about-content .left-content {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .portfolio.right-content {
+    flex-basis: 100%;
+  }
+
+.portfolio.left-content {
+    flex-basis: 100%;
+  }
+
+  .about-content .right-content {
+    flex-basis: 100%;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .skills-bar .bar .progress-line {
+    width: 100%;
+  }
+
+  .work-arrow {
+    display: none;
+  }
+
+  .right-content h1 {
+    margin-top: 3.2rem;
+  }
+
+
+  .proj {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work-arrow {
+    display: none;
+  }
+
+  .left-content h1 {
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+
+  .right-content h1 {
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+
+  .work-arrow-2 a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #D4B996FF;
+    display: block;
+    text-align: center;
+  }
+
+  .contact-content {
+    width: 100%;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .header {
+    height: 90vmax;
+  }
+ .about-content .left-content {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .portfolio.right-content {
+    flex-basis: 100%;
+  }
+
+.portfolio.left-content {
+    flex-basis: 100%;
+  }
+
+  .about-content .right-content {
+    flex-basis: 100%;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .skills-bar .bar .progress-line {
+    width: 100%;
+  }
+
+  .work-arrow {
+    display: none;
+  }
+
+  .right-content h1 {
+    margin-top: 3.2rem;
+  }
+
+
+  .proj {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+</style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikita Thakur</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <div>
+          <h1 class="navbar-brand">Nikita Thakur</h1>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#about">About</a></li>
+          <li><a href="#my-works">Projects</a></li>
+	  <li><a href="https://drive.google.com/file/d/1bRr_DZgJPeLQdgoamXv0L_4z6NWpuOE4/view?usp=sharing">Download resume</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="home-content" id="home-page">
+      <div class="name">
+        <h1>Hi, I'm Nikita</h1>
+        <p>Enthusiasts equipped with strong Python skills, proficiency in ML algorithms, and a solid foundation in data analysis. With expertise in NLP and a passion for deep learning.</p>
+      </div>
+      <div class="angle-down-icon">
+        <a href="#about"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </div>
+  </header>
+  <section class="about-me" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="left-content">
+          <div>
+            <h1 class="about-heading">About Me</h1>
+          </div>
+          <img src="https://i.postimg.cc/3rSDjsyn/Whats-App-Image-2024-01-12-at-01-40-12-1bb62bb1.jpg" alt="image" />
+          <p>
+            Enthusiastic third-year student pursuing a Machine Learning internship, equipped with strong Python skills, proficiency in ML algorithms, and a solid foundation in data analysis. With expertise in NLP and a passion for deep learning, I am eager to apply theoretical knowledge to deliver innovative solutions and contribute to dynamic team projects.
+          </p>
+          <div class="work-arrow">
+            <p>
+              <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
+            </p>
+          </div>
+        </div>
+<div class="right-content">
+        <div class="skills">
+  <div class="skills-heading">
+    <h1>My Skills</h1>
+  </div>
+
+  <div class="skills-container">
+    <!-- Languages -->
+    <div class="skill-category">
+         <h2>Languages</h2>
+         <h3>C++, Python, SQL, HTML, CSS, JavaScript</h3>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-category">
+         <h2>Tools</h2>
+         <h3>MS Excel, Power BI, MySQL, Canva, Figma</h3>
+    </div>
+
+    <!-- Competencies -->
+    <div class="skill-category">
+         <h2>Competencies</h2>
+         <h3>DSA, Matplotlib, Scikit learn, Pandas, Numpy, Seaborn, Tensorflow, NLTK</h3>
+    </div>
+          
+
+    <!-- Soft skills -->
+    <div class="skill-category">
+         <h2>Soft skills</h2>
+         <h3>Leadership, Analytical thinker, Project Management,  Expressive, Collaborative , Visionary, Multitasker</h3>
+    </div>
+  </div>
+</div>
+</div>
+
+            <div class="work-arrow-2">
+              <p>
+                <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="my-works">
+    
+      <div class="proj-heading">
+        <h1>     _____________           </h1>
+        <h1>Portfolio</h1>
+      </div>
+<div class="portfolio">
+            <div class="card">
+        <img src="https://i.postimg.cc/Qx12170b/images-1.jpg" alt="Project 1">
+        <h3>Retail Shop Analysis (Excel)</h3>
+        <p>Leverages Excel for retail data analysis, offering insights into sales trends, inventory management, and customer behavior to optimize business operations and improve decision-making.</p>
+        <a href="https://github.com/G3miniCodes/Data-Analysis-using-Excel-" class="btn">View Source</a>
+    </div>
+
+<div class="card">
+        <img src="https://i.postimg.cc/52mDkVcQ/download.jpg" alt="Project 1">
+        <h3>Data Analysis using Descriptive Statistics </h3>
+        <p>Employed descriptive statistics to analyze and interpret data trends, ensuring comprehensive insights for informed decision-making</p>
+        <a href="https://github.com/G3miniCodes/Data-Analysis-using-Discriptive-Stats-in-Excel" class="btn">View Source</a>
+    </div>
+
+<div class="card">
+        <img src="https://i.postimg.cc/8zGqHCYV/fake.jpg" alt="Project 1">
+        <h3>Fake News Analysis (ML & NLP)</h3>
+        <p>Integrates machine learning and natural language processing (NLP) to analyze text data, identifying patterns and features to classify news articles as potentially fake or trustworthy, contributing to media credibility assessment.</p>
+        <a href="https://github.com/G3miniCodes/Fake-News-Detection/tree/main" class="btn">View Source</a>
+    </div>
+
+<div class="card">
+        <img src="https://i.postimg.cc/CdT4wz8M/heart.jpg" alt="Project 1">
+        <h3>Heart Disease Prediction(ML)</h3>
+        <p>Utilizes machine learning algorithms to analyze medical data and predict the likelihood of an individual having heart disease, providing valuable insights for early intervention and prevention.</p>
+        <a href="https://github.com/G3miniCodes/Heart-Disease-Prediction" class="btn">View Source</a>
+    </div>
+
+<div class="card">
+        <img src="https://i.postimg.cc/Y25cvRf0/images.jpg" alt="Project 1">
+        <h3>Sales Dashboard (Power BI)</h3>
+        <p>Utilizes Power BI to create an interactive and visually appealing dashboard that consolidates sales data, providing stakeholders with real-time insights into key performance indicators and facilitating data-driven decision-making in sales management.</p>
+        <a href="https://github.com/G3miniCodes/Sales-Dashboard-Power-BI" class="btn">View Source</a>
+    </div>
+
+<div class="card">
+        <img src="https://i.postimg.cc/hGhHvLBM/3d-cinema-seating-with-popcorn.jpg" alt="Project 1">
+        <h3>Movie genre Classifier (SVM) </h3>
+        <p>The Movie Genre Classifier uses SVM and NLP to predict a movie's genre based on its description.</p>
+        <a href="https://github.com/G3miniCodes/Movie_genre_classifier" class="btn">View Source</a>
+    </div>
+
+    </div>
+  </section>
+  <div class="contact" id="contact-me">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Contact Me</h2>
+        <p class="mail">
+          Get in touch with me <i class="fas fa-arrow-right"></i> 111thakurnikita111@gmail.com
+        </p>
+        <p class="links">Or find me on:</p>
+        <a href="https://www.linkedin.com/in/nikita-thakur-815612241/" target="blank"><i class="fab fa-linkedin">
+            Linkedin</i></a>
+        
+        <a href="https://github.com/sanketbodke" target="blank"><i class="fab fa-github"></i> Github</a>
+        <a href="https://www.instagram.com/niiik_itaa?igsh=ejFkOWRudjlhdm9l" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+  </div>
+  <!-- JAVASCRIPT -->
+  <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
