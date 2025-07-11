@@ -260,15 +260,17 @@ h3 {
 
 
 .card {
-            width: 300px;
-            margin: 20px;
-            padding: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            background-color: #A07855FF;
-            text-align: center;
-            transition: transform 0.3s;
-        }
+  position: relative;  /* <-- Add this line */
+  width: 300px;
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #A07855FF;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
 
         .card:hover {
             transform: scale(1.05);
@@ -788,7 +790,7 @@ h3 {
         <img src="https://i.postimg.cc/4mnT1fvC/basketball.avif" alt="Project 1">
         <h3>Basketball EDA</h3>
         <p>This project showcases the EDA performed on basketball dataset and displayed on Streamlit as UI for user.</p>
-        <a href="https://github.com/G3miniCodes/basketball-eda" class="btn">Vw Source</a>
+        <a href="https://github.com/G3miniCodes/basketball-eda" class="btn">View Source</a>
     </div>
 <div class="card">
         <img src="https://i.postimg.cc/B8231mTX/digits.jpg" alt="Project 1">
